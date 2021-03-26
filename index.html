@@ -12,61 +12,70 @@
 
 <body>
     <header>
-        <ul>
+        <ul class="list-reset hide">
             <li><a href="#">Home</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-        <button>Menu</button>
+        <button class="burger-menu"><span class="sr-only">Menu</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 40.06" class="burger-style">
+                <path d="M0 35h52v5.06H0zM0 0h52v5.06H0zM0 18h38v5.06H0z" class="burger-color" />
+            </svg>
+        </button>
     </header>
     <main>
-        <h1>Hao's Collection</h1>
-        <ul>
-            <li>
-                <picture>
-                    <source srcset="img/homescreen/desktop/homescreen_desktop_1.jpg" media="(min-width: 1200px)">
-                    <source srcset="img/homescreen/tablet/homescreen_tablet_1.jpg" media="(min-width: 768px)">
-                    <source srcset="img/homescreen/mobile/homescreen_mobile_1.jpg">
-                    <img src="img/homescreen/desktop/homescreen_desktop_1.jpg"
-                        alt="Two people staring at each other in love">
-                </picture>
-            </li>
-            <li>
-                <picture>
-                    <source srcset="img/homescreen/desktop/homescreen_desktop_2.jpg" media="(min-width: 1200px)">
-                    <source srcset="img/homescreen/tablet/homescreen_tablet_2.jpg" media="(min-width: 768px)">
-                    <source srcset="img/homescreen/mobile/homescreen_mobile_2.jpg">
-                    <img src="img/homescreen/desktop/homescreen_desktop_2.jpg" alt="A girl looking to the side">
-                </picture>
-            </li>
-            <li>
-                <picture>
-                    <source srcset="img/homescreen/desktop/homescreen_desktop_3.jpg" media="(min-width: 1200px)">
-                    <source srcset="img/homescreen/tablet/homescreen_tablet_3.jpg" media="(min-width: 768px)">
-                    <source srcset="img/homescreen/mobile/homescreen_mobile_3.jpg">
-                    <img src="img/homescreen/desktop/homescreen_desktop_3.jpg"
-                        alt="A boy standing and looking in the distance">
-                </picture>
-            </li>
-            <li>
-                <picture>
-                    <source srcset="img/homescreen/desktop/homescreen_desktop_4.jpg" media="(min-width: 1200px)">
-                    <source srcset="img/homescreen/tablet/homescreen_tablet_4.jpg" media="(min-width: 768px)">
-                    <source srcset="img/homescreen/mobile/homescreen_mobile_4.jpg">
-                    <img src="img/homescreen/desktop/homescreen_desktop_4.jpg"
-                        alt="Skyline of New York City">
-                </picture>
-            </li>
-        </ul>
-
-        <h2>About Me</h2>
-        <p>Just a random guy on the internet who likes to takes pictures</p>
+        <h1 class="sr-only">Hao's Collection</h1>
+        <div class="container-relative slider-container">
+            <ul class="list-reset flex slider-width">
+                <li>
+                    <picture>
+                        <source srcset="img/homescreen/desktop/homescreen_desktop_1.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/homescreen/tablet/homescreen_tablet_1.jpg" media="(min-width: 768px)">
+                        <source srcset="img/homescreen/mobile/homescreen_mobile_1.jpg" media="(min-width: 300px)">
+                        <img class="homescreen-img" src="img/homescreen/desktop/homescreen_desktop_1.jpg"
+                            alt="Two people staring at each other in love">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/homescreen/desktop/homescreen_desktop_2.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/homescreen/tablet/homescreen_tablet_2.jpg" media="(min-width: 768px)">
+                        <source srcset="img/homescreen/mobile/homescreen_mobile_2.jpg" media="(min-width: 300px)">
+                        <img class="homescreen-img" src="img/homescreen/desktop/homescreen_desktop_2.jpg"
+                            alt="A girl looking to the side">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/homescreen/desktop/homescreen_desktop_3.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/homescreen/tablet/homescreen_tablet_3.jpg" media="(min-width: 768px)">
+                        <source srcset="img/homescreen/mobile/homescreen_mobile_3.jpg" media="(min-width: 300px)">
+                        <img class="homescreen-img" src="img/homescreen/desktop/homescreen_desktop_3.jpg"
+                            alt="A boy standing and looking in the distance">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/homescreen/desktop/homescreen_desktop_4.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/homescreen/tablet/homescreen_tablet_4.jpg" media="(min-width: 768px)">
+                        <source srcset="img/homescreen/mobile/homescreen_mobile_4.jpg" media="(min-width: 300px)">
+                        <img class="homescreen-img" src="img/homescreen/desktop/homescreen_desktop_4.jpg"
+                            alt="Skyline of New York City">
+                    </picture>
+                </li>
+            </ul>
+            <div class="container-absolute">
+                <h2>About Me</h2>
+                <p>Just a random guy on the internet who likes to takes pictures</p>
+                <ul class="list-reset">
+                    <li><button>Prev</button></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><button>Next</button></li>
+                </ul>
+            </div>
+        </div>
     </main>
-    <ul>
-        <li><button>Prev</button></li>
-        <li><a href="#">Gallery</a></li>
-        <li><button>Next</button></li>
-    </ul>
+
 </body>
 
 </html>

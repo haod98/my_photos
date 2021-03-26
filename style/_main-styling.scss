@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    font-family: $text_font;
+}
+
+h2 { 
+    font-family: $text_font;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: $text_font;
+}
+
+a {
+    font-family: $text_font;
+}

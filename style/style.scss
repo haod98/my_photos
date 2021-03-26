@@ -1,1 +1,33 @@
-@import "./var"
+@import "./var";
+@import "./header";
+@import "./main-styling";
+
+.homescreen-img {
+    max-width: 100%;
+    display: flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.slider-container {
+    overflow: hidden;
+}
+
+.slider-width {
+    width: 400%;
+    overflow: hidden;
+}
+
+.container-relative {
+    position: relative;
+    z-index: 1;
+}
+
+.container-absolute {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+}
+
