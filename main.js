@@ -15,7 +15,20 @@ next_btn.addEventListener('click', () => {
         ul.classList.remove('slider-animation');
         ul.style.left = "0";
         ul.removeEventListener('transitionend', move_li);
-        
+
     };
     ul.addEventListener('transitionend', move_li);
 })
+
+prev_btn.addEventListener('click', () => {
+    ul.classList.remove('slider-animation');
+    ul.style.left = "-100%";
+    const last_li = document.querySelector('.j-img-list > li:last-child');
+    ul.insertAdjacentElement('afterbegin', last_li);
+    requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+            ul.classList.add('slider-animation');
+            ul.style.left = "0";
+        });
+    });
+});
