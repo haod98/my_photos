@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/vvo1tna.css">
+    <script src="main.js" defer></script>
     <title>My Collection</title>
 </head>
 
@@ -27,19 +28,21 @@
         <h1 class="sr-only">Hao's Collection</h1>
         <div class="container-relative slider-container">
             <div>
-                <ul class="list-reset flex slider-width">
+                <ul class="list-reset flex slider-width j-img-list">
                     <li>
                         <picture>
-                            <source srcset="img/homescreen/desktop/homescreen_desktop_1.jpg" media="(min-width: 1200px)">
+                            <source srcset="img/homescreen/desktop/homescreen_desktop_1.jpg"
+                                media="(min-width: 1200px)">
                             <source srcset="img/homescreen/tablet/homescreen_tablet_1.jpg" media="(min-width: 768px)">
                             <source srcset="img/homescreen/mobile/homescreen_mobile_1.jpg" media="(min-width: 300px)">
-                            <img class="homescreen-img" src="img/homescreen/desktop/homescreen_desktop_1.jpg"
+                            <img class="homescreen-img homescreen-fadein" src="img/homescreen/desktop/homescreen_desktop_1.jpg"
                                 alt="Two people staring at each other in love">
                         </picture>
                     </li>
                     <li>
                         <picture>
-                            <source srcset="img/homescreen/desktop/homescreen_desktop_2.jpg" media="(min-width: 1200px)">
+                            <source srcset="img/homescreen/desktop/homescreen_desktop_2.jpg"
+                                media="(min-width: 1200px)">
                             <source srcset="img/homescreen/tablet/homescreen_tablet_2.jpg" media="(min-width: 768px)">
                             <source srcset="img/homescreen/mobile/homescreen_mobile_2.jpg" media="(min-width: 300px)">
                             <img class="homescreen-img" src="img/homescreen/desktop/homescreen_desktop_2.jpg"
@@ -48,7 +51,8 @@
                     </li>
                     <li>
                         <picture>
-                            <source srcset="img/homescreen/desktop/homescreen_desktop_3.jpg" media="(min-width: 1200px)">
+                            <source srcset="img/homescreen/desktop/homescreen_desktop_3.jpg"
+                                media="(min-width: 1200px)">
                             <source srcset="img/homescreen/tablet/homescreen_tablet_3.jpg" media="(min-width: 768px)">
                             <source srcset="img/homescreen/mobile/homescreen_mobile_3.jpg" media="(min-width: 300px)">
                             <img class="homescreen-img" src="img/homescreen/desktop/homescreen_desktop_3.jpg"
@@ -57,7 +61,8 @@
                     </li>
                     <li>
                         <picture>
-                            <source srcset="img/homescreen/desktop/homescreen_desktop_4.jpg" media="(min-width: 1200px)">
+                            <source srcset="img/homescreen/desktop/homescreen_desktop_4.jpg"
+                                media="(min-width: 1200px)">
                             <source srcset="img/homescreen/tablet/homescreen_tablet_4.jpg" media="(min-width: 768px)">
                             <source srcset="img/homescreen/mobile/homescreen_mobile_4.jpg" media="(min-width: 300px)">
                             <img class="homescreen-img" src="img/homescreen/desktop/homescreen_desktop_4.jpg"
@@ -67,13 +72,15 @@
                 </ul>
             </div>
             <div class="container-absolute">
-                <h2>About Me</h2>
-                <p>Just a random guy on the internet who likes to takes pictures</p>
-                <ul class="list-reset">
-                    <li><button>Prev</button></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><button>Next</button></li>
-                </ul>
+                <div class="wrapper text-color-change">
+                    <h2 class="reset">About Me</h2>
+                    <p class="reset description">Just a random guy on the internet <br> who likes to takes pictures</p>
+                    <ul class="list-reset flex-between">
+                        <li><button class="button-reset reset j-prev">Prev</button></li>
+                        <li><a href="#" class="gallery-link">Gallery</a></li>
+                        <li><button class="button-reset reset j-next">Next</button></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>
