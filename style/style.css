@@ -1,13 +1,13 @@
 header {
   position: absolute;
   z-index: 3;
+  margin: 3%;
 }
 
 .burger-menu {
   border-style: none;
   background: none;
-  margin-left: 10px;
-  margin-top: 20px;
+  padding: 0;
 }
 
 .burger-menu .burger-style {
@@ -26,12 +26,22 @@ header {
 body {
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 .list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.reset {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 3%;
 }
 
 .sr-only {
@@ -56,16 +66,69 @@ h1 {
 h2 {
   font-family: "quasimoda", "Arial", sans-serif;
   text-transform: uppercase;
+  color: #fff;
 }
 
 p {
   font-family: "quasimoda", "Arial", sans-serif;
+  color: #fff;
 }
 
 a {
   font-family: "quasimoda", "Arial", sans-serif;
+  color: #fff;
 }
 
+.homescreen-fadein {
+  -webkit-animation: fadeInImg 1s ease-in;
+          animation: fadeInImg 1s ease-in;
+}
+
+.text-color-change * {
+  -webkit-animation: colorChange 1s;
+          animation: colorChange 1s;
+}
+
+@-webkit-keyframes fadeInImg {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes fadeInImg {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+.slider-animation {
+  -webkit-transition: left .8s ease-in;
+  transition: left .8s ease-in;
+}
+
+/* @keyframes colorChange {
+    0% {
+        color: white;
+    }
+    100% {
+        color: black;
+    }
+}
+ */
 .homescreen-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,8 +147,10 @@ a {
 }
 
 .slider-width {
-  width: 400%;
   overflow: hidden;
+  position: relative;
+  left: 0;
+  height: 100%;
 }
 
 .container-relative {
@@ -93,9 +158,40 @@ a {
   z-index: 1;
 }
 
-.container-absolute {
+.container-relative .container-absolute {
   position: absolute;
-  z-index: 2;
   bottom: 0;
+  width: 100%;
+}
+
+.description {
+  margin-bottom: 30px;
+}
+
+.flex-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.flex-between .button-reset {
+  background: none;
+  border: none;
+  color: #fff;
+  font-family: "quasimoda", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.flex-between .gallery-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

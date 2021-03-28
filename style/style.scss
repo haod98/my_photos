@@ -1,6 +1,7 @@
 @import "./var";
 @import "./header";
-@import "./main-styling";
+@import "./default-styling";
+@import "./animations";
 
 .homescreen-img {
     display: flex;
@@ -16,18 +17,50 @@
 }
 
 .slider-width {
-    width: 400%;
     overflow: hidden;
+    position: relative;
+    left: 0;
+    height: 100%;
 }
 
 .container-relative {
     position: relative;
     z-index: 1;
+    .container-absolute {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }
 
-.container-absolute {
-    position: absolute;
-    z-index: 2;
-    bottom: 0;
+
+
+.description {
+    margin-bottom: 30px
 }
+
+.flex-between {
+    @include space-between;
+    margin-bottom: 20px;
+    
+    .button-reset {
+        @include button-reset;
+        color: $text_color;
+        font-family: $text_font;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 1rem;
+    }
+
+    .gallery-link {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 1rem;
+    }
+}
+
+
+
+
 

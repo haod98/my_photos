@@ -2,3 +2,14 @@ $text_color: #fff;
 $text_font: "quasimoda", "Arial", sans-serif; 
 $text_bold: 800;
 $text_normal: 400;
+
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin button-reset {
+    background: none;
+    border: none;
+    
+}
