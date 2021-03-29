@@ -13,14 +13,20 @@
 
 <body>
     <header>
-        <ul class="list-reset hide">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <button class="burger-menu"><span class="sr-only">Menu</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 40.06" class="burger-style">
+        <div class="overlay j-overlay">
+            <ul class="list-reset hide burger-nav j-burger-nav">
+                <li><a href="#" class="burger-nav__link">Home</a></li>
+                <li><a href="#" class="burger-nav__link">Gallery</a></li>
+                <li><a href="contact.html" class="burger-nav__link">Contact</a></li>
+            </ul>
+        </div>
+        <button class="burger-menu j-burger"><span class="sr-only">Menu</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 40.06" class="burger-style j-burger-icon">
                 <path d="M0 35h52v5.06H0zM0 0h52v5.06H0zM0 18h38v5.06H0z" class="burger-color" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="burger-style close-hide j-close-icon" viewBox="0 0 13.11 13.11">
+                <path d="M7.56-.92h1v17.44h-1z" class="burger-color" transform="rotate(-45 5.789687 8.931833)" />
+                <path d="M-.75 7.33H16.8v1H-.75z" class="burger-color" transform="rotate(-45 5.745544 8.970118)" />
             </svg>
         </button>
     </header>
@@ -35,7 +41,8 @@
                                 media="(min-width: 1200px)">
                             <source srcset="img/homescreen/tablet/homescreen_tablet_1.jpg" media="(min-width: 768px)">
                             <source srcset="img/homescreen/mobile/homescreen_mobile_1.jpg" media="(min-width: 300px)">
-                            <img class="homescreen-img homescreen-fadein" src="img/homescreen/desktop/homescreen_desktop_1.jpg"
+                            <img class="homescreen-img homescreen-fadein"
+                                src="img/homescreen/desktop/homescreen_desktop_1.jpg"
                                 alt="Two people staring at each other in love">
                         </picture>
                     </li>
