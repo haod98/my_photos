@@ -8,16 +8,56 @@ header {
     border-style: none;
     background: none;
     padding: 0;
+    position: fixed;
+    z-index: 4;
 
 
     .burger-style {
         width: 25px;
+        height: 25px;
     }
 
     .burger-color {
             fill: #fff;
         }
     
-    
+}
+
+.burger-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-size: 1.5rem;
+    text-align: center;
+        li {
+        margin-bottom: 30px;
+    }
+    .burger-nav__link {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+.overlay { 
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
 }
 
