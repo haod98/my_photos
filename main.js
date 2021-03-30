@@ -1,6 +1,6 @@
 //Infinite slider
-const prev_btn = document.querySelector('.j-prev');
-const next_btn = document.querySelector('.j-next');
+const prev_btn = document.querySelectorAll('.j-prev');
+const next_btn = document.querySelectorAll('.j-next');
 const ul = document.querySelector('.j-img-list');
 const img_lists = document.querySelectorAll('.j-img-list > li');
 const img_list_length = img_lists.length;
@@ -41,8 +41,12 @@ const close = () => {
     burger_icon.style.display = 'block';
 }
 
-next_btn.addEventListener('click', next);
-prev_btn.addEventListener('click', prev);
+for (const next_img of next_btn) {
+    next_img.addEventListener('click', next);
+}
+for (const prev_img of prev_btn) {
+    prev_img.addEventListener('click', prev);
+}
 
 //Burger menu
 const burger_menu = document.querySelector('.j-burger');
