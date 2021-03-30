@@ -20,8 +20,15 @@ body {
 }
 
 .wrapper {
-    margin: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
+
+.button-reset {
+    border: none;
+    background: none;
+}
+
 .sr-only {
         position: absolute;
         width: 1px;
@@ -33,9 +40,6 @@ body {
         border: 0;
 }
 
-.hide, .close-hide {
-    display: none;
-}
 
 h1 {
     font-family: $text_font;
@@ -57,3 +61,5 @@ a {
     color: $text_color;
 
 }
+
+

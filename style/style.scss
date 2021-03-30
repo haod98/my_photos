@@ -2,6 +2,7 @@
 @import "./header";
 @import "./default-styling";
 @import "./animations";
+@import "./contact";
 
 .homescreen-img {
     display: flex;
@@ -33,7 +34,6 @@
     }
 }
 
-
 .description {
     margin-bottom: 30px;
 }
@@ -41,7 +41,7 @@
 .flex-between {
     @include space-between;
     margin-bottom: 20px;
-    
+
     .button-reset {
         @include button-reset;
         color: $text_color;
@@ -59,7 +59,67 @@
     }
 }
 
+.arrow-control-container {
+    display: none;
+}
 
+@media (min-width: 1200px) {
+    .burger-menu {
+        display: none;
+    }
 
+    .hide-nav {
+        display: flex;
+        position: static;
+        transform: translate(0, 0);
+        .burger-nav__link {
+            margin-right: 70px;
+            opacity: 0.7;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
 
+    .about-me {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
 
+    .description {
+        font-size: 1.5rem;
+    }
+
+    .hide-control {
+        display: none;
+    }
+
+    .slider-animation {
+        transition: left 1s ease-in;
+    }
+
+    .arrow-control-container {
+        position: absolute;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        .arrow-control {
+            display: flex;
+            justify-content: space-between;
+        }
+        .arrow-size {
+            width: 50px;
+            .arrow-fill {
+                fill: #fff;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    body {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+}
