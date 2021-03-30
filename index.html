@@ -14,17 +14,19 @@
 <body>
     <header>
         <div class="overlay j-overlay">
-            <ul class="list-reset hide burger-nav j-burger-nav">
-                <li><a href="#" class="burger-nav__link">Home</a></li>
-                <li><a href="#" class="burger-nav__link">Gallery</a></li>
-                <li><a href="contact.html" class="burger-nav__link">Contact</a></li>
-            </ul>
         </div>
+        <ul class="list-reset hide-nav burger-nav j-burger-nav">
+            <li><a href="#" class="burger-nav__link">Home</a></li>
+            <li><a href="#" class="burger-nav__link">Gallery</a></li>
+            <li><a href="contact.html" class="burger-nav__link">Contact</a></li>
+        </ul>
+
         <button class="burger-menu j-burger"><span class="sr-only">Menu</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 40.06" class="burger-style j-burger-icon">
                 <path d="M0 35h52v5.06H0zM0 0h52v5.06H0zM0 18h38v5.06H0z" class="burger-color" />
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="burger-style close-hide j-close-icon" viewBox="0 0 13.11 13.11">
+            <svg xmlns="http://www.w3.org/2000/svg" class="burger-style close-hide j-close-icon"
+                viewBox="0 0 13.11 13.11">
                 <path d="M7.56-.92h1v17.44h-1z" class="burger-color" transform="rotate(-45 5.789687 8.931833)" />
                 <path d="M-.75 7.33H16.8v1H-.75z" class="burger-color" transform="rotate(-45 5.745544 8.970118)" />
             </svg>
@@ -77,12 +79,33 @@
                         </picture>
                     </li>
                 </ul>
+                <div class="arrow-control-container">
+                    <ul class="list-reset wrapper arrow-control">
+                        <button class="button-reset j-prev"> <span class="sr-only">Previous Image</span>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.84 91.77" class="arrow-size">
+                                    <path class="arrow-fill"
+                                        d="M45.63 91.77l.71-.71L1.41 46.13 46.84.71 46.13 0 0 46.13l45.63 45.64z" />
+                                </svg>
+                            </li>
+                        </button>
+                        <button class="button-reset j-next"> <span class="sr-only">Next Image</span>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.84 91.77" class="arrow-size">
+                                    <path class="arrow-fill"
+                                        d="M1.21 91.77l-.71-.71 44.93-44.93L0 .71.71 0l46.13 46.13L1.21 91.77z" />
+                                </svg>
+                            </li>
+                        </button>
+                    </ul>
+                </div>
             </div>
+
             <div class="container-absolute">
                 <div class="wrapper text-color-change">
-                    <h2 class="reset">About Me</h2>
+                    <h2 class="reset about-me">About Me</h2>
                     <p class="reset description">Just a random guy on the internet <br> who likes to takes pictures</p>
-                    <ul class="list-reset flex-between">
+                    <ul class="list-reset flex-between hide-control">
                         <li><button class="button-reset reset j-prev">Prev</button></li>
                         <li><a href="#" class="gallery-link">Gallery</a></li>
                         <li><button class="button-reset reset j-next">Next</button></li>
