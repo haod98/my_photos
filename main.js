@@ -36,7 +36,7 @@ const prev = () => {
 
 const close = () => {
     overlay.style.display = "none";
-    burger_nav.style.display = "none";
+    nav.style.display = "none";
     close_icon.style.display = 'none';
     burger_icon.style.display = 'block';
 }
@@ -51,7 +51,7 @@ for (const prev_img of prev_btn) {
 //Burger menu
 const burger_menu = document.querySelector('.j-burger');
 const overlay = document.querySelector('.overlay');
-const burger_nav = document.querySelector('.j-burger-nav');
+const nav = document.querySelector('.j-nav');
 const close_icon = document.querySelector('.close-hide');
 const burger_icon = document.querySelector('.j-burger-icon');
 
@@ -61,16 +61,34 @@ overlay.addEventListener('click', close);
 burger_menu.addEventListener('click', () => {
     overlay.style.display = "block";
     close_icon.style.display = 'block';
-    burger_nav.style.display = "block";
+    nav.style.display = "block";
     burger_icon.style.display = 'none';
 });
 
+//Fixed nav 
+let current_height = window.pageYOffset;
 
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > current_height) {
+        nav.style.position = "fixed";
+        nav.classList.add('nav--fade');
+    } else {
+        nav.classList.remove('nav--fade');
+    }
+    current_height = window.pageYOffset;
+})
 
-
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > current_height) {
+        burger_menu.style.position = "fixed";
+        burger_menu.style.zIndex = "4";
+    };
+    current_height = window.pageYOffset;
+});
 
 
 //Removes the fadein animation on the initial visit
 first_img.addEventListener('animationend', () => {
     first_img.classList.remove('homescreen-fadein');
 });
+
