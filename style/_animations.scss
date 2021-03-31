@@ -21,6 +21,10 @@
     transition: left .8s ease-in;
 }
 
+.nav--fade {
+    opacity: 0;
+}
+
 /* @keyframes colorChange {
     0% {
         color: white;

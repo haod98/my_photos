@@ -72,6 +72,9 @@
         display: flex;
         position: static;
         transform: translate(0, 0);
+        top: auto;
+        left: auto;
+        transition: opacity ease-in-out .2s;
         .burger-nav__link {
             margin-right: 70px;
             opacity: 0.7;
@@ -123,3 +126,4 @@
         margin: 0 auto;
     }
 }
+

@@ -12,7 +12,8 @@ header {
   border-style: none;
   background: none;
   padding: 0;
-  position: fixed;
+  -webkit-transition: opacity .2s ease-in;
+  transition: opacity .2s ease-in;
   z-index: 4;
 }
 
@@ -179,6 +180,10 @@ a {
   transition: left .8s ease-in;
 }
 
+.nav--fade {
+  opacity: 0;
+}
+
 /* @keyframes colorChange {
     0% {
         color: white;
@@ -189,11 +194,15 @@ a {
 }
  */
 .burger-color--contact {
-  fill: #000;
+  fill: #fff;
 }
 
 .burger-color-close--contact {
   fill: #fff;
+}
+
+.background-color {
+  background: #000;
 }
 
 .homescreen-img {
@@ -277,6 +286,10 @@ a {
     position: static;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
+    top: auto;
+    left: auto;
+    -webkit-transition: opacity ease-in-out .2s;
+    transition: opacity ease-in-out .2s;
   }
   .hide-nav .burger-nav__link {
     margin-right: 70px;
