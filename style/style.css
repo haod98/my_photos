@@ -2,6 +2,7 @@ header {
   position: absolute;
   z-index: 3;
   margin-top: 3%;
+  padding-bottom: 3%;
 }
 
 .hide-nav,
@@ -263,6 +264,12 @@ textarea {
 .myself {
   max-width: 100%;
   margin-top: 10px;
+}
+
+.contact-my-name {
+  margin: 0;
+  text-transform: initial;
+  font-size: 1.2rem;
 }
 
 .homescreen-img {
