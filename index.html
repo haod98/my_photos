@@ -12,25 +12,33 @@
 </head>
 
 <body>
-    <header>
+    <header class="wrapper">
         <div class="overlay j-overlay">
         </div>
-        <ul class="list-reset hide-nav burger-nav j-nav">
-            <li><a href="#" class="burger-nav__link">Home</a></li>
-            <li><a href="#" class="burger-nav__link">Gallery</a></li>
-            <li><a href="contact.html" class="burger-nav__link">Contact</a></li>
-        </ul>
-
-        <button class="burger-menu j-burger"><span class="sr-only">Menu</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 40.06" class="burger-style j-burger-icon">
-                <path d="M0 35h52v5.06H0zM0 0h52v5.06H0zM0 18h38v5.06H0z" class="burger-color" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="burger-style close-hide j-close-icon"
-                viewBox="0 0 13.11 13.11">
-                <path d="M7.56-.92h1v17.44h-1z" class="burger-color" transform="rotate(-45 5.789687 8.931833)" />
-                <path d="M-.75 7.33H16.8v1H-.75z" class="burger-color" transform="rotate(-45 5.745544 8.970118)" />
-            </svg>
-        </button>
+        <nav>
+            <ul class="list-reset burger-nav j-burger-nav">
+                <li><a href="index.html" class="burger-nav__link">Home</a></li>
+                <li><a href="#" class="burger-nav__link">Gallery</a></li>
+                <li><a href="contact.html" class="burger-nav__link">Contact</a></li>
+            </ul>
+            <button class="burger-menu j-burger"><span class="sr-only">Menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 40.06" class="burger-style j-burger-icon">
+                    <path d="M0 35h52v5.06H0zM0 0h52v5.06H0zM0 18h38v5.06H0z" class="burger-color" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="burger-style close-hide j-close-icon"
+                    viewBox="0 0 13.11 13.11">
+                    <path d="M7.56-.92h1v17.44h-1z" class="burger-color" transform="rotate(-45 5.789687 8.931833)" />
+                    <path d="M-.75 7.33H16.8v1H-.75z" class="burger-color" transform="rotate(-45 5.745544 8.970118)" />
+                </svg>
+            </button>
+        </nav>
+        <nav class="j-nav ">
+            <ul class="list-reset hide-nav burger-nav">
+                <li><a href="index.html" class="burger-nav__link">Home</a></li>
+                <li><a href="#" class="burger-nav__link">Gallery</a></li>
+                <li><a href="contact.html" class="burger-nav__link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <h1 class="sr-only">Hao's Collection</h1>

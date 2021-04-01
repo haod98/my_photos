@@ -1,10 +1,11 @@
 header {
   position: absolute;
   z-index: 3;
-  margin: 3%;
+  margin-top: 3%;
 }
 
-.hide-nav, .close-hide {
+.hide-nav,
+.close-hide {
   display: none;
 }
 
@@ -12,9 +13,10 @@ header {
   border-style: none;
   background: none;
   padding: 0;
-  -webkit-transition: opacity .2s ease-in;
-  transition: opacity .2s ease-in;
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
   z-index: 4;
+  position: fixed;
 }
 
 .burger-menu .burger-style {
@@ -24,6 +26,10 @@ header {
 
 .burger-menu .burger-color {
   fill: #fff;
+}
+
+.j-burger-nav {
+  display: none;
 }
 
 .burger-nav {
@@ -121,6 +127,7 @@ body {
 
 h1 {
   font-family: "quasimoda", "Arial", sans-serif;
+  color: #fff;
 }
 
 h2 {
@@ -137,6 +144,17 @@ p {
 a {
   font-family: "quasimoda", "Arial", sans-serif;
   color: #fff;
+}
+
+label {
+  font-family: "quasimoda", "Arial", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+textarea {
+  font-family: "quasimoda", "Arial", sans-serif;
 }
 
 .homescreen-fadein {
@@ -176,8 +194,8 @@ a {
 }
 
 .slider-animation {
-  -webkit-transition: left .8s ease-in;
-  transition: left .8s ease-in;
+  -webkit-transition: left 1s ease-in-out;
+  transition: left 1s ease-in-out;
 }
 
 .nav--fade {
@@ -203,6 +221,48 @@ a {
 
 .background-color {
   background: #000;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-column .send-btn {
+  background: #fff;
+  border: 0;
+  padding: 10px 0 10px;
+  margin-top: 10px;
+  font-family: "quasimoda", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 7px;
+}
+
+.flex-column .send-btn:hover {
+  background: #000;
+  color: #fff;
+  outline: 1px #fff solid;
+}
+
+.flex-column .label-margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.flex-column .input-height {
+  height: 30px;
+  font-family: "quasimoda", "Arial", sans-serif;
+}
+
+.myself {
+  max-width: 100%;
+  margin-top: 10px;
 }
 
 .homescreen-img {
@@ -275,7 +335,15 @@ a {
   display: none;
 }
 
+.inside-page {
+  position: static;
+}
+
 @media (min-width: 1200px) {
+  .j-nav {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+  }
   .burger-menu {
     display: none;
   }
@@ -283,7 +351,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: static;
+    position: fixed;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
     top: auto;

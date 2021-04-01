@@ -1,10 +1,11 @@
 header {
     position: absolute;
     z-index: 3;
-    margin: 3%;
+    margin-top: 3%;
 }
 
-.hide-nav, .close-hide {
+.hide-nav,
+.close-hide {
     display: none;
 }
 
@@ -12,9 +13,9 @@ header {
     border-style: none;
     background: none;
     padding: 0;
-    transition: opacity .2s ease-in;
+    transition: opacity 0.2s ease-in;
     z-index: 4;
-
+    position: fixed;
 
     .burger-style {
         width: 25px;
@@ -22,21 +23,24 @@ header {
     }
 
     .burger-color {
-            fill: #fff;
-        }
-    
+        fill: #fff;
+    }
+}
+
+.j-burger-nav {
+    display: none;
 }
 
 .burger-nav {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     font-size: 1.5rem;
     text-align: center;
     z-index: 5;
-        li {
+    li {
         margin-bottom: 30px;
     }
     .burger-nav__link {
@@ -50,10 +54,9 @@ header {
         align-items: center;
         flex-direction: column;
     }
-
 }
 
-.overlay { 
+.overlay {
     position: fixed;
     height: 100%;
     width: 100%;
@@ -65,5 +68,3 @@ header {
     z-index: 3;
     display: none;
 }
-
-

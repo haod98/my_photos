@@ -34,12 +34,7 @@ const prev = () => {
     });
 };
 
-const close = () => {
-    overlay.style.display = "none";
-    nav.style.display = "none";
-    close_icon.style.display = 'none';
-    burger_icon.style.display = 'block';
-}
+
 
 for (const next_img of next_btn) {
     next_img.addEventListener('click', next);
@@ -54,23 +49,32 @@ const overlay = document.querySelector('.overlay');
 const nav = document.querySelector('.j-nav');
 const close_icon = document.querySelector('.close-hide');
 const burger_icon = document.querySelector('.j-burger-icon');
+const burger_nav = document.querySelector('.j-burger-nav');
+console.log(nav);
 
 //Burger menu close
+const close = () => {
+    overlay.style.display = "none";
+    burger_nav.style.display = "none";
+    close_icon.style.display = 'none';
+    burger_icon.style.display = 'block';
+}
+
 overlay.addEventListener('click', close);
 
 burger_menu.addEventListener('click', () => {
     overlay.style.display = "block";
     close_icon.style.display = 'block';
-    nav.style.display = "block";
+    burger_nav.style.display = "block";
     burger_icon.style.display = 'none';
 });
 
-//Fixed nav 
-let current_height = window.pageYOffset;
 
+//Fixed nav 
+
+let current_height = window.pageYOffset;
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > current_height) {
-        nav.style.position = "fixed";
         nav.classList.add('nav--fade');
     } else {
         nav.classList.remove('nav--fade');
@@ -78,13 +82,7 @@ window.addEventListener('scroll', () => {
     current_height = window.pageYOffset;
 })
 
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > current_height) {
-        burger_menu.style.position = "fixed";
-        burger_menu.style.zIndex = "4";
-    };
-    current_height = window.pageYOffset;
-});
+
 
 
 //Removes the fadein animation on the initial visit

@@ -13,3 +13,8 @@ $text_normal: 400;
     border: none;
     
 }
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}

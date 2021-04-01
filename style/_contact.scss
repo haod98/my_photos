@@ -9,3 +9,37 @@
 .background-color {
     background: #000;
 }
+
+.flex-column {
+    @include flex-column;
+    .send-btn {
+        background: #fff;
+        border: 0;
+        padding: 10px 0 10px;
+        margin-top: 10px;
+        font-family: $text_font;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 7px;
+        &:hover {
+            background: #000;
+            color: #fff;
+            outline: 1px #fff solid;
+        }
+    }
+
+    .label-margin {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .input-height {
+        height: 30px;
+        font-family: $text_font;
+    }
+}
+
+.myself {
+    max-width: 100%;
+    margin-top: 10px;
+}

@@ -43,6 +43,7 @@ body {
 
 h1 {
     font-family: $text_font;
+    color: $text_color;
 }
 
 h2 { 
@@ -59,7 +60,16 @@ p {
 a {
     font-family: $text_font;
     color: $text_color;
-
 }
 
+label {
+    font-family: $text_font;
+    color: $text_color;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+textarea {
+    font-family: $text_font;
+}
 
