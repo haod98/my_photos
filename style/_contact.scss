@@ -61,7 +61,6 @@
 @media (min-width: 768px) {
     .flex-container {
     display: flex;
-    justify-content: space-between;
         .flex-column{
             flex-basis: 50%;
         }
@@ -71,5 +70,8 @@
             margin-left: 30px;
             margin-top: 25px;
         }
+    }
+    .space-between {
+        justify-content: space-between;
     }
 }
