@@ -1,0 +1,15 @@
+.flex-item {
+    flex-basis: 33.33%;
+    display: flex;
+    justify-content: center;
+    img {
+        margin: 30px 15px 0;
+    }
+}
+
+.flex-container-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 150px;
+}
