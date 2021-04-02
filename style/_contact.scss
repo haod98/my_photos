@@ -57,3 +57,19 @@
 .error {
     outline: 2px solid red;
 }
+
+@media (min-width: 768px) {
+    .flex-container {
+    display: flex;
+    justify-content: space-between;
+        .flex-column{
+            flex-basis: 50%;
+        }
+        .flex-basis {
+            flex-basis: 50%;
+            flex-direction: column;
+            margin-left: 30px;
+            margin-top: 25px;
+        }
+    }
+}

@@ -280,6 +280,31 @@ textarea {
   outline: 2px solid red;
 }
 
+@media (min-width: 768px) {
+  .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .flex-container .flex-column {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .flex-container .flex-basis {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 30px;
+    margin-top: 25px;
+  }
+}
+
 .homescreen-img {
   display: -webkit-box;
   display: -ms-flexbox;
