@@ -43,17 +43,20 @@
         <h1>Contact Me</h1>
         <div>
             <form class="flex-column j-form" action="action.php" method="POST">
-                <label for="name" class="label-margin">Name</label>
-                <input type="text" class="input-height" id="name">
-                <label for="email" class="label-margin">E-Mail</label>
-                <input type="email" class="input-height" id="email">
-                <label for="textfield" class="label-margin">Text</label>
-                <textarea name="textarea" id="textfield" cols="30" rows="10"></textarea>
+                <label for="name" class="label-margin mandatory">Name</label>
+                <input type="text" class="input-height j-mandatory-input id="name" name="name">
+                <label for="email" class="label-margin mandatory">E-Mail</label>
+                <input type="text" class="input-height j-mandatory-input" id="email" name="email">
+                <label for="textfield" class="label-margin mandatory">Text</label>
+                <textarea name="message" id="textfield" cols="30" rows="10" class="j-mandatory-input"></textarea>
+                <p class="j-charcount">300</p>
                 <button class="send-btn">Send</button>
             </form>
-            <img class="myself" src="img/contact/mobile/me-mobile.jpg" alt="A picture of myself looking at the camera">
-            <h2 class="contact-my-name">Hao</h2>
-            <a href="mailto:hao@email.com">hao@email.com</a>
+            <div>
+                <img class="myself" src="img/contact/mobile/me-mobile.jpg" alt="A picture of myself looking at the camera">
+                <h2 class="contact-my-name">Hao</h2>
+                <a href="mailto:hao@email.com">hao@email.com</a>
+            </div>
         </div>
 
 
