@@ -70,7 +70,7 @@
 
 @media (min-width: 1200px) {
     .j-nav {
-        transition: opacity .5s;
+        transition: opacity .3s ease-in-out;
     }
     .burger-menu {
         display: none;

@@ -322,6 +322,10 @@ textarea {
   margin: 30px 15px 0;
 }
 
+.flex-item img:hover {
+  cursor: pointer;
+}
+
 .flex-container-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -332,6 +336,20 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 150px;
+}
+
+.to-top-button {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+}
+
+.to-top-button .to-top {
+  width: 50px;
+}
+
+.to-top-button .to-top .fill {
+  fill: #fff;
 }
 
 .homescreen-img {
@@ -410,8 +428,8 @@ textarea {
 
 @media (min-width: 1200px) {
   .j-nav {
-    -webkit-transition: opacity .5s;
-    transition: opacity .5s;
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
   }
   .burger-menu {
     display: none;

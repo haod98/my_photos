@@ -1,6 +1,6 @@
 //Burger menu
 const burger_menu = document.querySelector('.j-burger');
-const overlay = document.querySelector('.overlay');
+const overlay = document.querySelector('.j-overlay');
 const nav = document.querySelector('.j-nav');
 const close_icon = document.querySelector('.close-hide');
 const burger_icon = document.querySelector('.j-burger-icon');

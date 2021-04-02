@@ -4,6 +4,9 @@
     justify-content: center;
     img {
         margin: 30px 15px 0;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -12,4 +15,16 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 150px;
+}
+
+.to-top-button {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    .to-top {
+        width: 50px;
+        .fill {
+            fill: #fff;
+        }
+    }
 }
