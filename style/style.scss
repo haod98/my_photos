@@ -68,6 +68,10 @@
     position: static;
 }
 
+.sliders-off {
+    opacity: .5;
+}
+
 @media (min-width: 1200px) {
     .j-nav {
         transition: opacity .2s ease-in-out;
