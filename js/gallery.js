@@ -5,8 +5,14 @@ const stage_close = document.querySelector('.j-overlay-close');
 const stage_tns = document.querySelector('.j-overlay_thumbnails')
 const prev_img = document.querySelector('.j-prev');
 const next_img = document.querySelector('.j-next');
+const to_top = document.querySelector('.j-to-top');
 
 console.log(stage_tns);
+
+//To Top
+to_top.addEventListener('click', () => {
+    window.scroll(0, 0)
+});
 
 const create_img = function (e) {
     stage.innerHTML = '';
