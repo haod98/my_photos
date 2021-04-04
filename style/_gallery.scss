@@ -1,3 +1,17 @@
+.prev-position {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next-position {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .flex-item {
     flex-basis: 33.33%;
     display: flex;
@@ -74,6 +88,10 @@
             }
         }
     }
+}
+
+.hide-content {
+    display: none;
 }
 
 .selected {

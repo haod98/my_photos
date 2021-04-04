@@ -1,6 +1,6 @@
 @import "./var";
-@import "./header";
 @import "./default-styling";
+@import "./header";
 @import "./animations";
 @import "./contact";
 @import "./gallery";
@@ -119,15 +119,21 @@
             display: flex;
             justify-content: space-between;
         }
-        .arrow-size {
-            width: 50px;
-            .arrow-fill {
-                fill: #fff;
-            }
-        }
     }
+
+    .arrow-size {
+        width: 50px;
+    }
+
+    .arrow-fill {
+        fill: #fff;
+    }
+
     .overlay-container .image-stage {
         height: calc(100% - 200px);
+    }
+    .hide-content {
+        display: block;
     }
 }
 
@@ -136,4 +142,5 @@
         max-width: 1920px;
         margin: 0 auto;
     }
+
 }
