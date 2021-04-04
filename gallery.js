@@ -41,9 +41,10 @@ for (const single_img of stage_img) {
                     img_outline.classList.add('selected');
                 });
             };
+            const current_href = e.currentTarget.getAttribute('href');
+            stage_tns.querySelector(`a[href="${current_href}"]`).parentNode.querySelector('img').classList.add('selected');
+
         };
-        const current_href = e.currentTarget.getAttribute('href');
-        stage_tns.querySelector(`a[href="${current_href}"]`).parentNode.querySelector('img').classList.add('selected');
         stage_overlay.style.display = 'flex';
 
     });
