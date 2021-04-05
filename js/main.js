@@ -40,11 +40,31 @@ const prev = () => {
     });
 };
 
+const off_slider = () => {
+    clearInterval(interval)
+    remove_slider_class();
+    left_auto.textContent = 'Left Auto Off';
+    right_auto.textContent = 'Right Auto Off';
+    off_auto.textContent = 'No sliding';
+    off_auto.classList.add('slider-on');
+};
+
+const next_auto_off = () => {
+    next();
+    off_slider();
+};
+
+const prev_auto_off = () => {
+    prev();
+    off_slider();
+};
+
+
 for (const next_img of next_btn) {
-    next_img.addEventListener('click', next);
+    next_img.addEventListener('click', next_auto_off);
 };
 for (const prev_img of prev_btn) {
-    prev_img.addEventListener('click', prev);
+    prev_img.addEventListener('click', prev_auto_off);
 };
 
 const remove_slider_class = () => {
@@ -53,7 +73,8 @@ const remove_slider_class = () => {
             slider_on.classList.remove('slider-on');
         };
     };
-}
+};
+
 
 let interval = null;
 left_auto.addEventListener('click', () => {
@@ -63,16 +84,11 @@ left_auto.addEventListener('click', () => {
     right_auto.textContent = 'Right Auto Off';
     off_auto.textContent = 'No sliding';
     left_auto.classList.add('slider-on');
-    interval = setInterval(prev, 3000);
+    interval = setInterval(prev, 7000);
 });
 
 off_auto.addEventListener('click', () => {
-    clearInterval(interval)
-    remove_slider_class();
-    left_auto.textContent = 'Left Auto Off';
-    right_auto.textContent = 'Right Auto Off';
-    off_auto.textContent = 'No sliding';
-    off_auto.classList.add('slider-on');
+    off_slider();
 });
 
 right_auto.addEventListener('click', () => {
@@ -82,12 +98,10 @@ right_auto.addEventListener('click', () => {
     right_auto.textContent = 'Right Auto On';
     off_auto.textContent = 'No sliding';
     right_auto.classList.add('slider-on');
-    interval = setInterval(next, 3000)
+    interval = setInterval(next, 7000)
 });
 
 right_auto.click();
-
-
 
 //Removes the fadein animation on the initial visit
 first_img.addEventListener('animationend', () => {

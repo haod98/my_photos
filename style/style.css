@@ -520,8 +520,16 @@ header {
   opacity: .5;
 }
 
+.sliders-off:hover {
+  cursor: pointer;
+}
+
 .slider-on {
   opacity: 1;
+}
+
+.slider-on:hover {
+  cursor: pointer;
 }
 
 @media (min-width: 1200px) {
@@ -572,6 +580,9 @@ header {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     width: 100%;
+  }
+  .arrow-control-container button:hover {
+    cursor: pointer;
   }
   .arrow-control-container .arrow-control {
     display: -webkit-box;

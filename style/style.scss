@@ -70,10 +70,16 @@
 
 .sliders-off {
     opacity: .5;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .slider-on {
     opacity: 1;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -123,6 +129,9 @@
         top: 50%;
         transform: translateY(-50%);
         width: 100%;
+        button:hover {
+            cursor: pointer;
+        }
         .arrow-control {
             display: flex;
             justify-content: space-between;
